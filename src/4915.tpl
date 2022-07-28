@@ -104,55 +104,14 @@
             margin: 0 auto;
         }
 
-        .smsBlock {
-            position: fixed;
-
-
-            width: 70px;
-            height: 70px;
-            padding: 6px 6px 16px 6px;
-
-            top: 10px;
-            right: 10px;
-            font-family: Arial, sans-serif;
-            background: #fff;
-            border: 1px solid #000;
-            z-index: 1;
-        }
-        .smsBlock__short {
-            width: 100%;
-            height: 100%;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            color: #fff;
-            background-color: #000;
-            /*font-size: 38px;*/
-            font-size: 20px;
-            line-height: 1;
-        }
-        .smsBlock__price {
-            /*font-size: 20px;*/
-            font-size: 11px;
-            color: #000;
-        }
-
         .header-info {
             position: absolute;
             top: 15px;
             right: 10px;
-            font-size: 13px;
+            font-size: 16px;
             color: #fff;
             z-index: 1;
         }
-
-
-
-
-
-
-
-
 
         .container {
             height: 100%;
@@ -162,26 +121,12 @@
             padding: 0 4.5em;
         }
 
-        .input {
-            text-align: center;
-            font-weight: 600;
-            color: #686868;
-            font-size: 30px;
-            border-bottom: 1px solid #adadad;
-            margin: 2vh auto;
-            padding: 12px;
-            width: 60%;
-            max-width: 590px;
-            background: url(../img/flag.png) no-repeat 8% center;
-            background-size: auto 65%;
-            padding-left: 7vh !important;
-        }
-
         .btn {
             background-color: #2ebddd;
             color: #fff;
             border-radius: 16px;
-            font-size: 24px;
+            /*font-size: 24px;*/
+            font-size: 30px;
             padding: 16px;
             cursor: pointer;
             width: 60%;
@@ -200,27 +145,7 @@
             margin: 0 0 1em;
             color: #747474;
             line-height: 1.4em;
-        }
-
-        .green {
-            color: #00b58a !important;
-            font-size: 2.2em;
-            text-align: center;
-            margin: 1em 0;
-            color: #747474;
-            line-height: 1.4em;
-            margin-bottom: 0;
-        }
-
-        .bottom {
-            position: absolute;
-            bottom: 10px;
-            left: 0;
-            width: 100%;
-        }
-
-        .hide {
-            display: none;
+            font-weight: bold;
         }
 
         .footer {
@@ -230,40 +155,14 @@
             bottom: 0;
             padding: 0 1px 3px;
             color: #a2a2a2;
-            font-size: 13px;
-            line-height: 12px;
+            font-size: 12px;
+            /*line-height: 12px;*/
+            /*font-size: 16px;*/
+            line-height: 1;
         }
 
         .footer a {
             text-decoration: underline;
-        }
-
-        .terms {
-            display: block;
-            font-weight: bold;
-        }
-
-        .loader_box {
-            display: block;
-            position: absolute;
-            top: 0;
-            left: 0;
-            right: 0;
-            bottom: 0;
-            background: rgba(0, 0, 0, 0.65);
-            z-index: 50;
-        }
-
-        .loader {
-            position: absolute;
-            top: 50%;
-            left: 50%;
-            -webkit-transform: translate(-50%, -50%);
-            -ms-transform: translate(-50%, -50%);
-            transform: translate(-50%, -50%);
-            width: 75px;
-            height: 75px;
-            z-index: 51;
         }
 
         @media screen and (max-width: 500px) and (max-height: 900px) {
@@ -275,20 +174,13 @@
                 max-width: 120px;
             }
 
-            .input {
-                width: 90%;
-                font-size: 18px;
-                background-size: auto 65%;
-            }
-
             .btn {
-                font-size: 20px;
+                /*font-size: 20px;*/
                 padding: 25px;
                 width: 90%;
             }
 
-            .orange,
-            .green {
+            .orange {
                 font-size: 16px;
             }
         }
@@ -303,8 +195,7 @@
                 max-width: 90px;
             }
 
-            .orange,
-            .green {
+            .orange {
                 font-size: 16px;
             }
         }
@@ -323,22 +214,9 @@
                 margin: 5px 0;
             }
 
-            .bottom {
-                position: relative;
-            }
-
-            .input {
-                font-size: 15px;
-            }
-
             .btn {
-                font-size: 18px;
+                /*font-size: 18px;*/
                 padding: 10px;
-            }
-
-            .green {
-                font-size: 17px;
-                margin-top: 3px;
             }
         }
 
@@ -347,14 +225,12 @@
                 max-width: 8%;
             }
 
-            .input,
             .btn {
-                font-size: 14px;
+                /*font-size: 14px;*/
                 padding: 8px;
             }
 
-            .orange,
-            .green {
+            .orange {
                 font-size: 15px;
             }
         }
@@ -364,8 +240,7 @@
                 max-width: 10%;
             }
 
-            .orange,
-            .green {
+            .orange  {
                 font-size: 15px;
             }
         }
@@ -382,12 +257,10 @@
                 max-width: 10%;
             }
 
-            .orange,
-            .green {
+            .orange {
                 font-size: 15px;
             }
 
-            .input,
             .btn {
                 padding: 6px;
             }
@@ -403,11 +276,6 @@
         @media screen and (max-width: 321px)and (max-height:569px) {
             .orange {
                 font-size: 15px;
-            }
-
-            .input {
-                background: url(../img/flag.png) no-repeat 3% center;
-                background-size: auto 65%;
             }
         }
 
@@ -465,8 +333,8 @@
 
             .footer {
                 width: 100%;
-                font-size: 12px;
-                line-height: 11px;
+                /*font-size: 12px;*/
+                /*line-height: 11px;*/
             }
         }
 
@@ -521,7 +389,7 @@
                 </p>
                 <a class="btn btn-primary" id="smsClick" href="{url}">ENVIAR SMS</a><br>
             </div>
-            <div style="transform: translateY(17vh); background: white" class="footer">
+            <div style="transform: translateY(100%); background: white" class="footer">
                 <p style="margin-bottom: 4px;" class="price">4 Euros por SMS</p>
                 Games Universe é um serviço de utilização exclusiva de Inspiritum LTD. O serviço é único e pode ser cobrado via SMS premium. A taxa de serviço é de 4 €. Para solicitar o serviço, clique em «Enviar SMS» e será redirecionado para a caixa de mensagens onde poderá iniciar o processo de pagamento enviando a palavra-chave PLAY para número 68638. Poderá entrar em contato com o detentor do serviço em insp.pt@silverlines.info ou na linha telefónica de taxa normal pelo número +351 211451299, no horário de segunda a sexta-feira das 9:00 às 18:00 horas. Pelo pedido feito para este serviço, o utilizador concorda incondicionalmente com estes <a href="https://ptnm.games-universe.online/terms">Termos e Condições</a> do serviço e confirma que tem o consentimento do titular legal do cartão SIM para executar o pedido.
                 Consulte os nossos&nbsp;<a href="https://ptnm.games-universe.online/terms">Termos & Condições</a>
